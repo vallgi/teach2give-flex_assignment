@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+   
+  .body{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .main_section{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .imageSection{
+    width: 100%;
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+  .sideBar{
+    background-color: hsl(240, 100%, 5%);
+  }
+  .sideBar h4{
+    color: white;
+  }
+  .sideBar p{
+    color: white;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .links{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .links ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+  }
+  .links ul li:hover{
+    color: hsl(5, 85%, 63%);
+  }
+  .sideBar{
+    background-color: hsl(240, 100%, 5%);
+    padding: 20px;
+    width: 30%;
+  }
+  .sidebar h2{
+    color: hsl(35, 77%, 62%);
+  }
+  .textHolder{
+    padding: 20px;
+  }
+  .footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+  }
+  .footer img{
+    width: 100%;
+    height: auto;
+  }
+  .footer h5:hover{
+    color: hsl(5, 85%, 63%);
+  }
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/teach2give-flex_assignment-main/assets/fonts/static/Inter-Regular.ttf') format('truetype');
+  } 
+  @font-face {
+    font-family: 'Inter-Bold';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/teach2give-flex_assignment-main/assets/fonts/static/Inter-ExtraBold.ttf') format('truetype');
+  }
+  .menu{
+    display: none;
+  }
+  .desktopImage{
+    display: block;
+  }
+  .mobileImage{
+    display: none;
+  }
+  .theBody{
+    font-family: 'Inter';
+    padding: 50px;
+  }
+  .textHolder div{
+      width: 50%
+  }
+  .component{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    position: relative;
+  }
+  .component h3{
+    position: absolute;
+    top: 0px
+  }
+  .component div{
+    margin-right: 20px;
+    padding: 20px;
+  }
+  @media only screen and (max-width: 480px){
+    .nav{
+      justify-content: space-between;
+    }
+    .theBody{
+      padding: 20px;
+    }
+    .links{
+      display: none;
+    }
+    .menu{
+      display: inline;
+    }
+    .desktopImage{
+      display: none;
+    }
+    .mobileImage{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .imageSection{
+      margin: 0px;
+    }
+    .main_section{
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    .body{
+      flex-wrap: wrap;
+    }
+    .sideBar{
+      width: 100%;
+    }
+    .textHolder{
+      flex-wrap: wrap;
+    }
+    .textHolder div{
+      width: 100%
+    }
+    .footer{
+      flex-wrap: wrap;
+    }
+    .component{
+      width: 100%;
+    }
+    .component div{
+      margin-right: 0px;
+
+    }
+
+  }
+ 
+
+  
+  </style>
+</head>
+<body  class="theBody">
+  <div class="nav"  >
+    <img src="/teach2give-flex_assignment-main/assets/images/logo.svg" alt="">
+    <img src="/teach2give-flex_assignment-main/assets/images/icon-menu.svg" alt="" class="menu">
+    <div class="links"> 
+      <ul>
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+    </div>
+  </div>
+  <div class="body">
+    <div class="main_section">
+      <div class="imageSection">
+        <img 
+        style="width: 100%; height: auto;"
+        src="/teach2give-flex_assignment-main/assets/images/image-web-3-desktop.jpg" alt="mainsection photo" class="desktopImage"/>
+        <img src="/teach2give-flex_assignment-main/assets/images/image-web-3-mobile.jpg" alt="" class="mobileImage">
+      </div>
+      <div class="textHolder" style="display: flex; justify-content: space-evenly;">
+        <div >
+          <h1 style="font-family: 'Inter-Bold';    font-size: 60px; text-align: start; font-weight: 800;">The Bright <br>Future of <br> Web 3.0?</h1>
+        </div>
+        <div >
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+    But is it really fulfilling its promise?</p>
+          <button style="background-color: hsl(5, 85%, 63%); width: 150px; height: 50px; margin-top: 50px;">READ MORE</button>
+        </div>
+      </div>
+      
+    </div>
+    <div class="sideBar">
+      <h2 style="color: hsl(35, 77%, 62%);"><b>New</b></h2>
+      <h4><b>Hydrogen VS Electric Cars</b></h4>
+      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      <hr>
+      <h4><b>The Downsides of AI Artistry</b></h4>
+      <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      <hr>
+      <h4><b>Is VC Funding Drying Up?</b></h4>
+      <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="component">
+      <div class="image" >
+        <img 
+        src= "/teach2give-flex_assignment-main/assets/images/image-retro-pcs.jpg" alt="laptop picture"/>
+      </div>
+      <div>
+        <h3>01</h3>
+        <h5><b>Reviving Retro PCs</b></h5>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div class="component">
+      <div >
+        <img
+        src="/teach2give-flex_assignment-main/assets/images/image-top-laptops.jpg" alt="Keyboard"/>
+      </div>
+      <div>
+        <h3>02</h3>
+        <h5><b>Top 10 Laptops of 2022</b></h5>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+  </div>
+    <div class="component">
+      <div>
+        <img 
+        src="/teach2give-flex_assignment-main/assets/images/image-gaming-growth.jpg" alt="Game pad"/>
+      </div>
+      <div>
+        <h3>03</h3>
+        <h5><b>The Growth of Gaming</b></h5>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+  </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
